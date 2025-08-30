@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+        <nav class="navbar"> 
+            <h1 class="logo">Bignova</h1>
+            <ul>
+                <li>
+                    <a href="#home">Acceuil</a> 
+                </li>
+                <li>
+                    <a href="#about">A propos</a> 
+                </li>
+                <li>
+                    <a href="#services">Services</a> 
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a> 
+                </li>
+            </ul>
+        </nav>        
+    </header>
+    <main>
+        <section id="contact">
+            <h2> Contactez nous</h2>
+            <form class="contact-form">
+                <label for="name"> Nom: </label>
+                <input type="text" id="name" name="name" required>
+                <label for="Email"> Email: </label>
+                <input type="email" id="email" name="email" required>
+                <label for="Message"> Message: </label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+                <label> Type de demande: </label>
+                <div class="radio-group">
+                    <input type="radio" id="formation" name="type" value="formation" checked>
+                    <label for="formation"> Formation</label>
+                    <input type="radio" id="partenariat" name="type" value="partenariat" >
+                    <label for="partenariat"> Partenariat</label>
+                </div>
+                <label class="checkbox"> 
+                    <input type="checkbox" required /> j'accepte que mes données soient utilisées pour me recontacter
+                </label>
+                <button type="submit"> Envoyer</button>
+
+
+            </form>
+        </section>
+    </main>
+
+
+
+
+    
+    <footer>
+        <p> &copy; 2025 Bignova, tous droits reservés.</p>    
+    </footer>    
+</body>
+</html>
