@@ -21,7 +21,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+     align-items: center;
     padding: 1rem 2rem;
 }
 .navbar.logo{
@@ -93,7 +93,7 @@ section h2 {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
 
 }
 .about-text p{
@@ -105,4 +105,87 @@ section h2 {
     max-width: 500px;
     width: 100%;
     border-radius: 10px;
+}
+
+/* Services */
+.card-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+}
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+/* Nos valeurs */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+.values-item{
+    background: #e9dcf7;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.values-item h4{
+    margin-bottom: 0.5rem;
+    color: #4a0072;
+}
+
+/* contact form */
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+.contact-form label{
+    margin-top: 1rem;
+
+}
+.contact-form input, .contact-form textarea {
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+}
+.contact-form .radio-group{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+
+}
+.contact-form .radio-group label{
+    margin: 0;
+}
+.contact-form input[type="checkbox"]{
+    margin-right: 0.5rem;
+}
+.contact-form .checkbox{
+    margin-top: 1rem;
+}
+.contact-form button{
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background: #6A0DAD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form button:hover{
+    background: #580a9c;
+}
+/* footer */
+footer{
+    background: #6A0DAD;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
 }
